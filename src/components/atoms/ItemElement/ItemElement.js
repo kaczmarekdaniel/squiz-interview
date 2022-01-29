@@ -30,7 +30,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const ItemId = styled.p``;
 const BasicData = styled.div`
   width: 60%;
   padding: 5px;
@@ -47,12 +46,12 @@ const NumberOfEmployees = styled.div`
 
 const ItemElement = ({ item }) => {
   return (
-    <Wrapper>
+    <Wrapper
+      className="itemElement"
+      data-country={item.country}
+      data-industry={item.industry}
+    >
       <BasicData>
-        <ItemId>
-          <u>{item.id}</u>
-        </ItemId>
-
         <h1>{item.name}</h1>
         <h2>{item.industry}</h2>
         <p>From: {item.country}</p>

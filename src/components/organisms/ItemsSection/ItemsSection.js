@@ -5,12 +5,17 @@ import DisplayItems from "../../molecules/DisplayItems/DisplayItems";
 const Wrapper = styled.div`
   width: 70%;
   height: 100%;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 1000px;
+  }
 `;
 
-const ItemsSection = (props) => {
+const ItemsSection = ({ items }) => {
   return (
     <Wrapper>
-      <DisplayItems></DisplayItems>
+      <DisplayItems items={items}></DisplayItems>
     </Wrapper>
   );
 };

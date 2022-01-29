@@ -22,21 +22,7 @@ const ItemElementSkeleton = styled.div`
   }
 `;
 
-const DisplayItems = (props) => {
-  const { items, setItems } = useContext(AppContext);
-
-  useEffect(() => {
-    const fetchItems = async () => {
-      fetch("https://dujour.squiz.cloud/developer-challenge/data")
-        .then((response) => response.json())
-        .then((data) => {
-          setItems(data);
-        })
-        .catch((err) => console.error(err));
-    };
-    fetchItems();
-  }, []);
-
+const DisplayItems = ({ items }) => {
   return (
     <Wrapper>
       {items != null ? (
