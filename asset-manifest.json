@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/squiz-interview/static/css/main.9f088a99.css",
-    "main.js": "/squiz-interview/static/js/main.3732d282.js",
+    "main.js": "/squiz-interview/static/js/main.d7be1cd5.js",
     "index.html": "/squiz-interview/index.html",
     "main.9f088a99.css.map": "/squiz-interview/static/css/main.9f088a99.css.map",
-    "main.3732d282.js.map": "/squiz-interview/static/js/main.3732d282.js.map"
+    "main.d7be1cd5.js.map": "/squiz-interview/static/js/main.d7be1cd5.js.map"
   },
   "entrypoints": [
     "static/css/main.9f088a99.css",
-    "static/js/main.3732d282.js"
+    "static/js/main.d7be1cd5.js"
   ]
 }
