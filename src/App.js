@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { AppContext } from "./providers/AppProvider";
+import { Wrapper, MainWrapper, Content } from "./App.styles";
+
 import {
   SortArrayEmployeesDESC,
   SortArrayEmployeesASC,
@@ -10,50 +12,11 @@ import {
   handleRemoveItem,
   handleAddItem,
 } from "./helpers/filterAndSortHelpers";
+
+// components
 import ItemsSection from "./components/organisms/ItemsSection/ItemsSection";
 import SortSelect from "./components/molecules/SortSelect/SortSelect";
 import Filters from "./components/organisms/Filters/Filters";
-
-const MainWrapper = styled.div`
-  max-width: 100vw;
-  min-height: 100vh;
-  background-color: #262626;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-`;
-
-const Content = styled.div`
-  min-width: 75%;
-  min-height: 75vh;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-  }
-`;
-
-const Wrapper = styled.div`
-  width: 100%;
-  height: auto;
-  color: white;
-
-  hr {
-    margin: 10px 0 10px 0;
-  }
-  select {
-    margin: 10px 0 10px 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 25%;
-  }
-`;
 
 const SortFilterSection = (props) => {
   const { items } = useContext(AppContext);

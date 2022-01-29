@@ -4,11 +4,12 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   min-height: 100px;
   width: 100%;
-
-  margin: 5px;
+  max-width: 100vw;
+  margin: 5px 10px;
   background: whitesmoke;
   border-radius: 5px;
   display: flex;
+
   overflow: hidden;
   h1 {
     font-size: 24px;
@@ -26,7 +27,9 @@ const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 300px;
+    width: 30%;
+    min-width: 300px;
+    margin: 5px;
   }
 `;
 

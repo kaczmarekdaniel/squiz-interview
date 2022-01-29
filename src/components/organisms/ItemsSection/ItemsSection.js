@@ -3,12 +3,12 @@ import styled from "styled-components";
 import DisplayItems from "../../molecules/DisplayItems/DisplayItems";
 
 const Wrapper = styled.div`
-  width: 70%;
+  max-width: 100vw;
   height: 100%;
-  width: 100%;
-
+  justify-content: flex-start;
+  align-items: flex-start;
   @media screen and (min-width: 1200px) {
-    width: 1000px;
+    width: 80%;
   }
 `;
 

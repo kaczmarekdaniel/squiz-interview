@@ -19,20 +19,20 @@ export function SortArrayAlphabetDESC(x, y) {
 }
 
 export function SortArrayEmployeesASC(x, y) {
-  if (x.numberOfEmployees > y.numberOfEmployees) {
+  if (x.numberOfEmployees < y.numberOfEmployees) {
     return -1;
   }
-  if (x.numberOfEmployees < y.numberOfEmployees) {
+  if (x.numberOfEmployees > y.numberOfEmployees) {
     return 1;
   }
   return 0;
 }
 
 export function SortArrayEmployeesDESC(x, y) {
-  if (x.numberOfEmployees < y.numberOfEmployees) {
+  if (x.numberOfEmployees > y.numberOfEmployees) {
     return -1;
   }
-  if (x.numberOfEmployees > y.numberOfEmployees) {
+  if (x.numberOfEmployees < y.numberOfEmployees) {
     return 1;
   }
   return 0;
