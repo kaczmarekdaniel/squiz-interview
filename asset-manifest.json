@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/squiz-interview/static/css/main.9f088a99.css",
+    "main.js": "/squiz-interview/static/js/main.1555e62e.js",
+    "index.html": "/squiz-interview/index.html",
+    "main.9f088a99.css.map": "/squiz-interview/static/css/main.9f088a99.css.map",
+    "main.1555e62e.js.map": "/squiz-interview/static/js/main.1555e62e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f088a99.css",
+    "static/js/main.1555e62e.js"
+  ]
+}
